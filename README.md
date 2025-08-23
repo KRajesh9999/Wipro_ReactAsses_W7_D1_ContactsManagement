@@ -12,11 +12,15 @@ Clone this repository
 git clone <your-repo-url>
 cd <your-repo-folder>
 
-Install dependencies
+## Install dependencies
 npm install
 
-Start the development server
-npm start
+## Start the development server
+ Go to path Server then:
+ For Backend Server: npm run start
+ 
+ Change path to FrontEnd:
+ For Front End: npm start
 
 Open your browser and go to
 http://localhost:3000
