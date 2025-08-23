@@ -1,0 +1,113 @@
+/* Global Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #f4ede4, #e6dccf);
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3c2f2f;
+}
+
+/* Container for Pages */
+.container {
+  max-width: 420px;
+  width: 100%;
+  padding: 2.5rem;
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(60, 47, 47, 0.2);
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Default Heading Style */
+h2 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* Special Heading Colors */
+h2.login-title {
+  color: #5d3a1a; /* Rich Oil Brown */
+  font-size: 2.2rem;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+h2.contact-title {
+  color: #a97448; /* Lighter Brown */
+  font-size: 2.3rem;
+  margin-bottom: 2.2rem;
+  text-transform: uppercase;
+}
+
+/* Input Fields */
+input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  margin: 0.6rem 0;
+  border-radius: 10px;
+  border: 1px solid #d4c1b1;
+  font-size: 1rem;
+  outline: none;
+  background: #fdfaf7;
+  transition: 0.3s ease;
+}
+
+input:focus {
+  border-color: #a97448;
+  box-shadow: 0 0 6px rgba(169, 116, 72, 0.5);
+}
+
+/* Oil Brown Buttons */
+button {
+  padding: 0.75rem 1.6rem;
+  margin-top: 1.2rem;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(135deg, #5d3a1a, #a97448); /* Oil shaded brown */
+  color: #fff8f0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.35s ease-in-out;
+  box-shadow: 0 4px 15px rgba(93, 58, 26, 0.4);
+}
+
+button:hover {
+  transform: scale(1.07);
+  background: linear-gradient(135deg, #4a2e15, #926841);
+  box-shadow: 0 6px 22px rgba(74, 46, 21, 0.5);
+}
+
+button:active {
+  transform: scale(0.96);
+  background: linear-gradient(135deg, #3b2410, #7a5635);
+  box-shadow: 0 3px 12px rgba(59, 36, 16, 0.6);
+}
+
+/* Links */
+a {
+  display: inline-block;
+  margin-top: 1rem;
+  color: #5d3a1a;
+  font-weight: 500;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #3b2410;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
